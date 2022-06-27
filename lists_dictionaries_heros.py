@@ -19,9 +19,17 @@ franchise = {
 }
 z = [ {'x': 10, 'y': 20} ]
 #1.) How would you change the value 10 in x to 15?  Once you're done x should then be [ [5,2,3], [15,8,9] ].  
+x[1][0] = 15
+print(x)
 #2.) How would you change the hero_name of the first hero from 'Batman' to "Dark Knight"?
+heros[0]['hero_name'] = 'Dark Knight'
+print(heros)
 #3.) For the franchise dictionary, how would you change 'Aquaman' to 'Daredevil'?
+franchise['dc'][1] = 'Daredevil'
 #4.) For z, how would you change the value 20 to 30?
+z[0]['y'] = 30
+print(franchise)
+print(z)
 
 #-----------------------------------------------------------------
 #Problem 2

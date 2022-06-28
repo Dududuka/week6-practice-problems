@@ -43,6 +43,13 @@ superheros = [
     {'real_name': 'Diana Prince', 'hero_name': 'Wonder Woman'}
 ]
 
+def iterateDictionary(list_of_dcts):
+    for dct in list_of_dcts:
+        for key in dct:
+            print(key, '-', dct[key])
+  
+iterateDictionary(superheros)
+
 #iterateDictionary(superheros) should output
 
 #real_name - Steve Rogers, hero_name - Captain America
@@ -54,6 +61,15 @@ superheros = [
 #Problem 3
 #Create a function that given a list of dictionaries and a key name, 
 #it outputs the value stored in that key for each dictionary.  
+
+def iterateDictionary2(key, list_of_dcts):
+    for dct in list_of_dcts:
+        for keys in dct:
+            if keys == key:
+                print(dct[key]) 
+            
+iterateDictionary2('real_name', superheros)
+
 #For example, iterateDictionary2('real_name', superheros) should output
 
 #Steve Rogers
@@ -70,6 +86,14 @@ movie_collection = {
     'disney': ['Cinderella', 'Encanto', 'Little Mermaid', 'Tangled', 'Beauty & The Beast', 'Lion King', '101 Dalmations'],
     'pixar': ['Toy Story', 'Monsters, Inc.', 'Up', 'Finding Nemo', 'Coco', 'Wall-E', 'The Incredibles', 'Inside Out']
 }
+
+def iterateDictionary3(dct):
+    for key, lst in dct.items():
+        print(len(lst), key.upper())
+        for str in lst:
+            print("-", str)
+        
+iterateDictionary3(movie_collection)
 
 #Expected Outpout
 #7 DISNEY
